@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #19172e;
+    font-family: "sans";
+}
+
+h1 {
+    color: white;
+}
+
+.clock {
+    position: relative;
+    width: 450px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.digital {
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.digital .hour,
+.digital .min,
+.digital .sec,
+.digital .DOT {
+    font-size: 5rem;
+}
+
+.dot {
+    font-size: 5rem;
+}
+
+#ampm {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.digital .hour,
+.digital .min,
+.digital .sec {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
